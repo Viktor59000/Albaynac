@@ -1,9 +1,14 @@
 body {
-    background-color: #F6A500;
-    background-image: url('images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: 
+        url('images/background.png') no-repeat, /* Image de fond au-dessus */
+        linear-gradient(
+            to right, 
+            white 5%, 
+            #F6A500 5%, 
+            #F6A500 95%, 
+            white 95%
+        ); /* Dégradé en dessous */
+    background-size: 100%; /* L'image conserve sa taille naturelle, le dégradé occupe toute la largeur */
     margin: 0;
     padding: 150px 0 0 0;
     box-sizing: border-box;
